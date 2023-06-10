@@ -1,0 +1,71 @@
+/* 'scheme' => '#4189dd #ffffff #4472C4 #ffffff #B4C6E7 #D9E2F3 #000000', */
+
+/* 'width' => '100%',
+'halign' => 'center',
+'talign' => 'center', */
+
+
+.daily_pt_title {
+    background-color: #4189dd;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid white;
+    font-size: 1.35em;
+    font-weight: 500;
+}
+
+.daily_pt_row_header {
+    background-color: #4472C4; 
+    color: #ffffff;
+    text-align: center;
+}
+.daily_pt_row_header .cell {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center; 
+    border: 1px solid white;
+}
+
+.daily_pt_row_even {
+    background-color: #D9E2F3;
+    color: #000000;
+}
+
+.daily_pt_row_odd {
+    background-color: #B4C6E7;
+    color: #000000;
+}
+
+.daily_pt_row_odd .cell, .daily_pt_row_even .cell {
+    text-align: left;
+    border: 1px solid white; 
+    padding: 3px 10px;
+}
+
+.monthly_pt_header {
+    background-color: #4189dd;
+    color: #ffffff;
+    text-align: center;
+}
+.monthly_pt_header .cell{
+    padding: 5px 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+    border: 1px solid black
+}
+
+
+.monthly_pt_row_even {
+    background-color: #D9E2F3;
+    color: #000000;
+}
+
+.monthly_pt_row_odd {
+    background-color: #B4C6E7;
+    color: #000000;
+}
+.monthly_pt_row_even .cell, .monthly_pt_row_odd .cell{   
+    padding: 5px 12px;
+    border: 1px solid black; 
+
+}

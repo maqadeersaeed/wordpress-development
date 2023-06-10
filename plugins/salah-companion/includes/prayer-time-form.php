@@ -176,14 +176,14 @@ function sc_prayer_form_meta_box_handler($item)
                     <label for="calc_method">calc_method</label>
                 <br>	
                     <select id ="calc_method" name="calc_method"  autocomplete="off">                    
-                        <option value="Jafari" <?PHP if ( $item['calc_method'] == 'Jafari' )  { echo 'selected'; };  ?> >Ithna Ashari</option>
-                        <option value="Karachi" <?PHP if ( $item['calc_method'] == 'Karachi' )  { echo 'selected'; };  ?> >University of Islamic Sciences, Karachi</option>
-                        <option value="ISNA" <?PHP if ( $item['calc_method'] == 'ISNA')  { echo 'selected'; };  ?> >Islamic Society of North America (ISNA)</option>
-                        <option value="MWL" <?PHP if ( $item['calc_method'] == 'MWL' )  { echo 'selected'; };  ?> >Muslim World League (MWL)</option>
-                        <option value="Makkah" <?PHP if ( $item['calc_method'] == 'Makkah' )  { echo 'selected'; };  ?> >Umm al-Qura, Makkah</option>
-                        <option value="Egypt" <?PHP if ( $item['calc_method'] == 'Egypt' )  { echo 'selected'; };  ?> >Egyptian General Authority of Survey</option>
-                        <option value="Custom" <?PHP if ( $item['calc_method'] == 'Custom' )  { echo 'selected'; };  ?> >Custom Setting</option>
-                        <option value="Tehran" <?PHP if ( $item['calc_method'] == 'Tehran' )  { echo 'selected'; };  ?> >Institute of Geophysics, University of Tehran</option>
+                        <option value="0" <?PHP if ( $item['calc_method'] == '0' )  { echo 'selected'; };  ?> >Ithna Ashari</option>
+                        <option value="1" <?PHP if ( $item['calc_method'] == '1' )  { echo 'selected'; };  ?> >University of Islamic Sciences, Karachi</option>
+                        <option value="2" <?PHP if ( $item['calc_method'] == '2')  { echo 'selected'; };  ?> >Islamic Society of North America (ISNA)</option>
+                        <option value="3" <?PHP if ( $item['calc_method'] == '3' )  { echo 'selected'; };  ?> >Muslim World League (MWL)</option>
+                        <option value="4" <?PHP if ( $item['calc_method'] == '4' )  { echo 'selected'; };  ?> >Umm al-Qura, Makkah</option>
+                        <option value="5" <?PHP if ( $item['calc_method'] == '5' )  { echo 'selected'; };  ?> >Egyptian General Authority of Survey</option>
+                        <option value="6" <?PHP if ( $item['calc_method'] == '6' )  { echo 'selected'; };  ?> >Custom Setting</option>
+                        <option value="7" <?PHP if ( $item['calc_method'] == '7' )  { echo 'selected'; };  ?> >Institute of Geophysics, University of Tehran</option>
                     </select>
                 </p>
                 <p>	

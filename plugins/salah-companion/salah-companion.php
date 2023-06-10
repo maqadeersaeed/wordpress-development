@@ -58,15 +58,6 @@ function sc_install()
 // run the install scripts upon plugin activation
 register_activation_hook(__FILE__, 'sc_install');
 
-
-// function sc_load_plugin_textdomain()
-// {
-//     load_plugin_textdomain('sc', false, basename(dirname(__FILE__)) . '/languages');
-// }
-// add_action('plugins_loaded', 'sc_load_plugin_textdomain');
-
-
-
 function sc_admin_menu()
 {
     add_menu_page(
@@ -85,26 +76,22 @@ function sc_admin_menu()
         'prayer-time-form', //menu slug
         'sc_prayer_times_create_handler' //function
     ); 
-
-    // //this submenu is HIDDEN, however, we need to add it anyways
-    // add_submenu_page(
-    //     null, //parent slug
-    //     'Prayer Time', //page title
-    //     'Prayer Time', //menu title
-    //     'manage_options', //capability
-    //     'prayer-time-update', //menu slug
-    //     'sc_prayer_times_update_handler' // function
-    // );
 }
 add_action('admin_menu', 'sc_admin_menu');
 
-// function sc_languages()
-// {
-//     load_plugin_textdomain('sc', false, dirname(plugin_basename(__FILE__)));
-// }
-// add_action('init', 'sc_languages');
-
 // define('ROOTDIR', plugin_dir_path(__FILE__));
 $ROOTDIR = plugin_dir_path(__FILE__);
+require_once($ROOTDIR . 'utils/praytime.php');
+
+if ( !class_exists( 'uCal' ) ) {
+	include_once($ROOTDIR . 'utils/uCal.php');
+}
+
+
 require($ROOTDIR . 'includes/prayer-times-list.php');
 require($ROOTDIR . 'includes/prayer-time-form.php');
+
+require($ROOTDIR . 'shortcodes/samples.php');
+require($ROOTDIR . 'shortcodes/prayer-sample.php');
+require($ROOTDIR . 'shortcodes/daily_prayer_time_shortcode.php');
+require($ROOTDIR . 'shortcodes/monthly_prayer_time_shortcode.php');
